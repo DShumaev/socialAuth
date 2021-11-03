@@ -1,0 +1,5 @@
+{
+  "authFacebookURL": "https://sisbro.herokuapp.com/auth/facebook/login",
+  "authGoogleURL": "https://sisbro.herokuapp.com/auth/google/login",
+  "authVKontakteURL": "https://sisbro.herokuapp.com/auth/vkontakte/login"
+}

@@ -1,0 +1,5 @@
+{
+  "authFacebookURL": "https://fba8-91-227-46-188.eu.ngrok.io/auth/facebook/login",
+  "authGoogleURL": "https://fba8-91-227-46-188.eu.ngrok.io/auth/google/login",
+  "authVKontakteURL": "https://fba8-91-227-46-188.eu.ngrok.io/auth/vkontakte/login"
+}
