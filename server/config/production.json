@@ -1,25 +1,25 @@
 {
   "isProduction": true,
   "port": 5000,
-  "mongoUri": "mongodb+srv://admin:admin@cluster0.910zn.mongodb.net/socialAuth?retryWrites=true&w=majority",
-  "baseUrl": "https://sisbro.herokuapp.com",
-  "jwtSecret": "R@nd0m",
-  "salt": 12,
+  "mongoUri": "mongodb+srv://your_user:your_pswd@cluster0.910zn.mongodb.net/db_name?retryWrites=true&w=majority",
+  "baseUrl": "https://your_domain",
+  "jwtSecret": "your_secret",
+  "salt": 0,
   "oauth": {
     "googleAuth": {
-      "clientID": "425951691727-i4o52f5ivjkg92lco7bqdm154nr2l3cb.apps.googleusercontent.com",
-      "clientSecret": "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",
-      "callbackURL": "https://sisbro.herokuapp.com/auth/google/callback"
+      "clientID": "your_id",
+      "clientSecret": "your_secret",
+      "callbackURL": "https://your_domain/auth/google/callback"
     },
     "vkontakteAuth": {
-      "clientID": "7992388",
-      "clientSecret": "wyCQJHwMOoiwTFyoaZsE",
-      "callbackURL": "https://sisbro.herokuapp.com/auth/vkontakte/callback"
+      "clientID": "your_id",
+      "clientSecret": "your_secret",
+      "callbackURL": "https://your_domain/auth/vkontakte/callback"
     },
     "facebookAuth": {
-      "clientID": "318644889620959",
-      "clientSecret": "631ad1a8167920533f117f76359fc7b2",
-      "callbackURL": "https://sisbro.herokuapp.com/auth/facebook/callback"
+      "clientID": "your_id",
+      "clientSecret": "your_secret",
+      "callbackURL": "https://your_domain/auth/facebook/callback"
     }
   }
 }
