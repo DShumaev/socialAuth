@@ -2,25 +2,25 @@
   "isProduction": false,
   "reactUrl": "http://localhost:3000",
   "port": 5000,
-  "mongoUri": "mongodb+srv://admin:admin@cluster0.910zn.mongodb.net/socialAuth?retryWrites=true&w=majority",
+  "mongoUri": "mongodb+srv://your_user:your_pswd@cluster0.910zn.mongodb.net/db_name?retryWrites=true&w=majority",
   "baseUrl": "http://localhost:5000",
-  "jwtSecret": "R@nd0m",
-  "salt": 12,
+  "jwtSecret": "your_secret",
+  "salt": 0,
   "oauth": {
     "googleAuth": {
-      "clientID": "151573233819283",
-      "clientSecret": "77514bccf01fae94ef82963a4465eb07",
-      "callbackURL": "https://fba8-91-227-46-188.eu.ngrok.io/auth/google/callback"
+      "clientID": "your_id",
+      "clientSecret": "your_secret",
+      "callbackURL": "https://your_domain/auth/google/callback"
     },
     "vkontakteAuth": {
-      "clientID": "7989223",
-      "clientSecret": "jneNFDG5uJM2XEQoutv5",
-      "callbackURL": "https://fba8-91-227-46-188.eu.ngrok.io/auth/vkontakte/callback"
+      "clientID": "your_id",
+      "clientSecret": "your_secret",
+      "callbackURL": "https://your_domain/auth/vkontakte/callback"
     },
     "facebookAuth": {
-      "clientID": "402603374844841",
-      "clientSecret": "26ec90816b3c5755fc0052518d9ba23e",
-      "callbackURL": "https://fba8-91-227-46-188.eu.ngrok.io/auth/facebook/callback"
+      "clientID": "your_id",
+      "clientSecret": "your_secret",
+      "callbackURL": "https://your_domain/auth/facebook/callback"
     }
   }
 }
