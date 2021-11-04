@@ -11,7 +11,7 @@ const socketHandler = require('./socket')
 const path = require('path')
 
 
-const PORT = config.get('port') || 6000
+const PORT = process.env.PORT || config.get('port')
 const mongoURI = config.get('mongoUri')
 
 const app = express()
@@ -26,11 +26,13 @@ passportUseStrategies(passport)
 app.use(passport.initialize())
 
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.PROD === 'production') {
     app.use(express.static(path.resolve(__dirname + '/../client/build')))
-    app.get('*', (req, res) => {
+    const getMainPage = (req, res) => {
         res.sendFile(path.resolve(__dirname + '/../client/build/index.html'))
-    })
+    }
+    app.get('/', getMainPage)
+    app.get('/auth', getMainPage)
 }
 
 app.use('/auth', authRouter)
